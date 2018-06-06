@@ -16,6 +16,7 @@ def main():
     # Test your functions by putting calls to them here:
     two_circles()
     circle_and_rectangle()
+    lines()
 
 
 def two_circles():
