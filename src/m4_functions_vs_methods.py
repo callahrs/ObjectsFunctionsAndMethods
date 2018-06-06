@@ -82,6 +82,9 @@ def main():
     turtle3()
 
     # When the TODOs ask you to test YOUR code, put YOUR tests here:
+    try_methods()
+    try_functions()
+    try_methods_and_functions()
 
     window.close_on_mouse_click()
 
@@ -175,6 +178,12 @@ def try_methods():
     #    Put a statement in   main   to test this function
     #    (by calling this function).
     ####################################################################
+    anna = rg.SimpleTurtle()
+    anna.pen = rg.Pen('brown', 5)
+    anna.forward(150)
+    anna.left(90)
+    anna.forward(50)
+    anna.backward(100)
 
 
 def try_functions():
@@ -196,6 +205,9 @@ def try_functions():
     # HINT: see   jump_and_move_turtle   above.
     #
     ####################################################################
+    jump_and_move_turtle(200, 100, 300, 30)
+    jump_and_move_turtle(100, 200, 0, 0)
+    jump_and_move_turtle(-50, 50, 100, 100)
 
 
 def try_methods_and_functions():
@@ -241,6 +253,22 @@ def try_methods_and_functions():
     # function defined above.  If you don't see why, ** ASK FOR HELP. **
     #
     ####################################################################
+    steve = rg.SimpleTurtle()
+    steve.pen = rg.Pen('blue', 5)
+
+    steve.backward(150)
+    steve.speed = 1
+    draw_many_squares(steve, 2, 100, 30)
+    steve.pen = rg.Pen('red',5)
+    steve.speed = 5
+    draw_many_squares(steve, 10, 50, 15)
+    steve.pen = rg.Pen('red', 35)
+    steve.speed = 100
+    draw_many_squares(steve, 8, 300, 60)
+    steve.pen = rg.Pen('black', 3)
+    steve.backward(200)
+    steve.draw_circle(30)
+    steve.draw_square(50)
 
 
 # ----------------------------------------------------------------------
