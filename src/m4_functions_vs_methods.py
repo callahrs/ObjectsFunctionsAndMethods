@@ -259,7 +259,7 @@ def try_methods_and_functions():
     steve.backward(150)
     steve.speed = 1
     draw_many_squares(steve, 2, 100, 30)
-    steve.pen = rg.Pen('red',5)
+    steve.pen = rg.Pen('red', 5)
     steve.speed = 5
     draw_many_squares(steve, 10, 50, 15)
     steve.pen = rg.Pen('red', 35)
