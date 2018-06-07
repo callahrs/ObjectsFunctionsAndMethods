@@ -157,7 +157,7 @@ def lines():
     point3 = rg.Point(300, 100)
     point4 = rg.Point(250, 150)
     line2 = rg.Line(point3, point4)
-    line2.thickness()
+    line2.thickness = 20
 
     line1.attach_to(window)
     line2.attach_to(window)
@@ -165,6 +165,14 @@ def lines():
     window.render()
 
     window.close_on_mouse_click()
+    point5 = line1.get_midpoint()
+    print(point5)
+    print(point5.x)
+    print(point5.y)
+    point6 = line2.get_midpoint()
+    print(point6)
+    print(point6.x)
+    print(point6.y)
 
 
 # ----------------------------------------------------------------------
