@@ -149,6 +149,22 @@ def lines():
     # ------------------------------------------------------------------
     # TODO: 4. Implement and test this function.
     # ------------------------------------------------------------------
+    window = rg.RoseWindow()
+    point1 = rg.Point(100, 150)
+    point2 = rg.Point(200, 50)
+    line1 = rg.Line(point1, point2)
+
+    point3 = rg.Point(300, 100)
+    point4 = rg.Point(250, 150)
+    line2 = rg.Line(point3, point4)
+    line2.thickness()
+
+    line1.attach_to(window)
+    line2.attach_to(window)
+
+    window.render()
+
+    window.close_on_mouse_click()
 
 
 # ----------------------------------------------------------------------
